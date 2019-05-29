@@ -5,8 +5,8 @@ import (
 	"net"
 	"time"
 
-	"github.com/michlabs/duplex/poc2/duplex"
-	"github.com/michlabs/go-vhost"
+	"github.com/frimik/duplex/poc2/duplex"
+	"github.com/frimik/go-vhost"
 )
 
 func server(backendListen, frontendListen string) {

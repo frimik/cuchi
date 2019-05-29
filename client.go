@@ -4,7 +4,7 @@ import (
 	"log"
 	"net"
 
-	"github.com/michlabs/duplex/poc2/duplex"
+	"github.com/frimik/duplex/poc2/duplex"
 )
 
 func client(backendConnect, localConnect, vhostName string) {

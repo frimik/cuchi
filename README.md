@@ -1,23 +1,24 @@
-# cuchi
+# tunnlea
 
-``cuchi`` is a forked of [localtunnel](https://github.com/progrium/localtunnel). Read file `README.original.md` or visit the original project to get more information.
+``tunnlea``, pronounced `/ˈtʌnliː/` is a fork of [cuchi](https://github.com/michlabs/cuchi)
 
-## Install cuchi
+## Install tunnlea
 
-Binary releases have not been set up yet, so you'll need Go to get started:
-    $ go install github.com/michlabs/cuchi
+    $ go install github.com/frimik/tunnlea
 
 ## Usage
 
-`cuchi` binary runs in both server and client mode
-```
-# server mode
-$ cuchi -s your_server.com:1203 your_server.com:80
+`tunnlea` binary runs in both server and client mode
 
-# client mode
-$ cuchi your_server.com:1203 localhost:8080 your_subdomain
+```sh
+# tunnlea_server
+$ tunnlea -s backend_interface:1203 frontend_interface:80
+
+# tunnlea_client
+$ tunnlea tunnlea_server:1203 localhost:8080 myhost.example.com
 ```
-Then the request to `your_subdomain.your_server.com` will be tunnelled to the `localhost:8080`
+
+Then the request to `myhost.example.com` will be tunnelled to `localhost:8080`.
 
 ## License
 
